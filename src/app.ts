@@ -1,11 +1,7 @@
 import cors from "cors";
 import { GraphQLServer } from "graphql-yoga";
-//import mongoose from "mongoose";
 import helmet from "helmet";
 import logger from "morgan";
-import path from "path"
-import dotenv from 'dotenv'
-dotenv.config({ path: path.join(__dirname, '../.env') })
 import schema from "./schema";
 
 class App {
