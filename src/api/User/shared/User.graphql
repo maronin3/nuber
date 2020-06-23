@@ -4,8 +4,8 @@ type User {
     firstName: String!
     lastName: String!
     age: Int
-    password: String!
-    phoneNumber: String!
+    password: String
+    phoneNumber: String
     verifiedEmail: Boolean!
     profilePhto: String!
     fullName: String!
@@ -15,9 +15,10 @@ type User {
     lastLng: Float
     lastlat: Float
     lastOrientation: Float
+    fbId: String
     chat: Chat
     messages: [Message]
-    verifications: [Verifications]
+    verifications: [Verification]
     ridesAsPassenger: [Ride]
     ridesAsDriver: [Ride]
     createdAt: String!
